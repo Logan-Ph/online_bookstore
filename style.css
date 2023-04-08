@@ -1,6 +1,6 @@
 body {
     background-color: #00001d;
-    margin:0 500px;
+    padding:0 400px;
     background-size: cover;
     background-position:center center ;
     box-sizing: border-box;
@@ -118,6 +118,7 @@ nav .wrapper{
 
 .nav_links{
     display: inline-flex;
+    margin-left:-118px ;
 }
 
 .mega_box{
@@ -131,7 +132,7 @@ nav .wrapper{
    opacity: 0;
    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
    transform: translateY(1em);
-   z-index: -1;
+   z-index: 1;
 }
 
 .mega_box .content{
@@ -174,3 +175,203 @@ nav .wrapper{
     transition-delay: 0s, 0s, 0.3s;
 }
 
+.section_template{
+    background-color: white;
+    height: fit-content ;
+    width: 100% ;
+    background-image: url('https://cdn.shopify.com/s/files/1/1288/2297/files/dark_bg_2.jpg?v=1646567924');
+    z-index: -1;
+}
+
+.section_template div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.section_img{
+    height: 600px;
+    margin-right: 0px;
+    margin-top: 25%;    
+}
+
+.section_template div div b {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-weight: 2000;
+}
+.section_template div div p{
+    text-align: left;
+}
+
+.section_template div .section_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+.content_underline{
+    border-bottom: 4px solid #ff6162;
+    opacity: 1px;
+    padding-right: 100px;
+    font-size: 0px;
+}
+
+.section_template_content {
+    font-size: 18px;
+}
+
+.section_content button{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    background-color: #00001d;
+    border: 2px solid white;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0 25px;
+}
+
+.section_content button:hover{
+    background-color: #ff6162;
+    border: 2px solid #ff6162;
+    transition: 0.5s ease;
+}
+
+
+
+.section_content button span{
+    margin-right: 20px;
+}
+
+.btn_img{
+    padding-bottom: 7px;
+
+}
+
+.section_template_feature img{
+    width: 75px;
+    height: 75px;
+    padding-left: 10px;
+    padding-top: 15px;
+    /* -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; */
+}
+
+.section_template_feature img:hover{
+    width: 75px;
+    height: 75px;
+    padding-left: 10px;
+    padding-top: 15px;
+    transform: scale(1.1);
+}
+
+.four_features{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.feature_content_1, 
+.feature_content_2,
+.feature_content_3,
+.feature_content_4{
+    padding-top: 30px;
+    margin-left: 25px;
+    line-height: 15px;
+    font-size: 17px;
+}
+
+.feature div b {
+    font-size: 22px;
+}
+
+.feature{
+    display: flex;
+    background-color: #030128;
+    height: 100px;
+    width: 310px;
+    padding: 10px 13px ;
+}
+
+.section_template_feature{
+    margin-top: 70px;
+}
+
+.best_seller_header{
+    margin-top:110px;
+    text-align: center;
+    line-height: 14px;
+}
+
+.best_seller_header b{
+    font-size: 44px;
+}
+
+.best_seller_header p{
+    font-size: 23px;
+}
+
+.best_seller_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best_seller{
+    margin-top: 50px;
+    border:1px solid #2f2e3e;
+    box-sizing: border-box;
+    width: 300px;
+    height: 480px;
+}
+
+.best_seller_img img{
+    width: 200px;
+    height: 270px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.best_seller div p img{
+    width: 13px;
+    margin-top: -10px;
+}
+
+.best_seller_content p b{
+    line-height: 10px;
+    padding-left: 30px;
+    font-size: 23px;
+}
+
+.star{
+    margin-right:10px;
+    margin-left: 20px;
+}
+
+.star img{
+    width: 100px;
+    padding-left: 10px;
+}
+
+.best_seller_content .price{
+    color: #ff6162;
+    display: block;
+}
+
+.sale_off{
+    text-decoration:line-through;
+    color: white;
+}
+
+.special_price {
+    padding-left: 30px;
+    display: flex;
+}
+
+.special_price span {
+    margin-right: -26px;
+}
