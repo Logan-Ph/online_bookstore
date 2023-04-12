@@ -267,15 +267,25 @@ nav .wrapper{
     height: 75px;
     padding-left: 10px;
     padding-top: 15px;
+    transition: transform ease-in-out;
 }
 
-.section_template_feature img:hover{
-    transition: ease-in-out;
+@keyframes shake {
+    from{
+        transform: scale(1.2) rotate(-1.4deg);
+    }
+
+    to{
+        transform: rotate(2.8deg) scale(1.2);
+    }
+}
+
+.section_template_feature .feature:hover img{
     width: 75px;
     height: 75px;
     padding-left: 10px;
     padding-top: 15px;
-    transform: scale(1.1);
+    animation: shake 0.1s ease-in-out 0.1s 4;
 }
 
 .four_features{
@@ -529,6 +539,7 @@ nav .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease ;
 }
 
 .arrow_up {
@@ -546,7 +557,7 @@ nav .wrapper{
 
 .scroll_up:active{
     background-color: rgba(255, 97, 97, 0.8);
-    transform: translateY(-1px);
+    transform: translateY(-4px);
 }
 
 .product_action{
@@ -593,9 +604,7 @@ nav .wrapper{
     border-radius:20px ;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    transform: translateY(1em);
-    z-index: 1;
+    transition: opacity 0.55s ease-in-out , visibility 0.2s, z-index 0.01s;
 }
 
 
@@ -624,5 +633,18 @@ nav .wrapper{
 
 .best_seller:hover .product_action_feature{
     visibility: visible;
-    opacity: 1;
+    z-index: 1;
+    opacity: 1.0;
 }
+
+@keyframes slideupdown{
+    from{
+        transform:translateY(-7px) ;
+    }
+
+    to{
+        transform: translateY(7px);
+    }
+    
+}
+
