@@ -1305,8 +1305,122 @@ nav .wrapper {
     font-size: 20px;
 }
 
+/* -----------------------------------BOOK DETAIL PAGE----------------------------------- */
 
+.contact_us_information {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
 
+.contact_us_information_template,
+.contact_us_template {
+    width: 50%;
+}
+
+.line {
+    display: flex;
+    border: 1px solid white;
+    margin: 30px;
+    border-radius: 10px;
+    padding-left:30px;
+    flex-wrap: wrap;
+}
+
+.line input,
+.line select {
+    background-color: #00001d;
+    border: none;
+    color: white;
+}
+
+.line input:focus,
+.line select:focus {
+    border: none;
+    outline: none !important;
+}
+
+.line p {
+    font-size: 20px;
+}
+
+.receive p {
+    margin-right: 40px;
+}
+
+.line label {
+    margin-right: 50px;
+}
+
+.line_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    padding-left: calc(100% - 80%);
+}
+
+.info_1 {
+    font-size: 25px;
+}
+
+.info_main{
+    display: grid;
+
+}
+.contact_us_information_main img {
+    width: 40px;
+    height: 40px;
+    padding-top: 24px;
+    padding-right: 40px;
+}
+
+.contact_us_information_main div p b,
+.contact_us_main div p b {
+    font-size: 40px;
+}
+
+.contact_us_information_main div p {
+    margin-bottom: 40px;
+}
+
+.contact_us_template {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.2);
+}
+
+#name,
+#email,
+#phone,
+#contact,
+#note {
+    font-family: 'El Messiri', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.submit_button{
+    background-color: #739566;
+    border: none;
+}
+
+.submit_button,.reset_button{
+    margin-bottom: 30px;
+}
+
+.contact_button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit_button:hover{
+    border: 1px solid #739566;
+    color: #739566;
+    background-color: #00001d;
+}
 
 /* -----------------------------------RESPONSIVE----------------------------------- */
 @media screen and (max-width: 2520px) {
@@ -1985,6 +2099,26 @@ nav .wrapper {
     .page2 {
         margin-top: 1600px;
     }
+
+    .contact_us_information{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .contact_us_template,
+    .contact_us_information_template{
+        width: 80%;
+    }
+
+    .contact_us_information_template{
+        margin-bottom: 100px;
+    }
+
+    .submit_button,
+    .reset_button{
+        display: block;
+    }
 }
 
 @media screen and (max-width:1600px) {
@@ -2132,8 +2266,7 @@ nav .wrapper {
     }
 
     .best_seller_section,
-    .four_features
-    {
+    .four_features {
         padding: 0px 20px !important;
     }
 
@@ -2145,8 +2278,8 @@ nav .wrapper {
 }
 
 
-@media  screen and (max-width:1420px) {
-    
+@media screen and (max-width:1420px) {
+
     .section_main_category {
         flex-direction: column-reverse;
     }
@@ -2259,11 +2392,11 @@ nav .wrapper {
         margin-top: 7310px;
     }
 
-    .footer_category{
+    .footer_category {
         margin-top: 9700px;
     }
 
-    .best_seller_content{
+    .best_seller_content {
         padding-left: 30px;
     }
 
@@ -2531,7 +2664,7 @@ nav .wrapper {
 
     .book_detail_section,
     .des_section {
-        padding: 30px 70px;
+        padding: 30px 40px;
     }
 
     .name,
@@ -2548,14 +2681,26 @@ nav .wrapper {
 
 }
 
-@media screen and (max-width:880px) {
-    .special_offers{
-        height: 660px;
+@media screen and (max-width:960px){
+    .line{
+        flex-direction: column;
+    }
+
+    #name, #email, #phone, #contact, #note{
+        border-radius:30px ;
+    }
+
+    .line p{
+        margin-bottom:7px ;
     }
 }
 
-
 @media screen and (max-width:880px) {
+
+    .special_offers {
+        height: 660px;
+    }
+
     .single_book_template {
         width: 600px !important;
         height: 870px;
@@ -2642,59 +2787,60 @@ nav .wrapper {
 
     /* -----------------------------------BOOK DETAILS PAGE----------------------------------- */
 
-    .des_header{
-        margin-left: 20px
+    .des_header {
+        margin-left: 11px
     }
-    .des_header div{
+
+    .des_header div {
         margin-right: 30px
     }
 
-    .single_book_template{
+    .single_book_template {
         width: 500px !important;
         height: 730px;
     }
 
-    .single_book_template img{
+    .single_book_template img {
         width: 400px;
     }
 
-    .alternative_book_content{
+    .alternative_book_content {
         width: 160px;
-        height: 220px ;
+        height: 220px;
     }
 
-    .alternative_book_content img{
+    .alternative_book_content img {
         width: 115px;
         height: auto;
     }
 
-    .name{
-        font-size: 35px !important; 
+    .name {
+        font-size: 35px !important;
     }
 
-    .genre{
+    .genre {
         font-size: 23px;
     }
 
     .payment_img,
-    .secure_img{
+    .secure_img {
         padding-top: 30px !important;
         padding-right: 0px !important;
     }
 
-    .page_navigation{
+    .page_navigation {
         display: flex;
         justify-content: flex-end;
     }
 }
 
 @media screen and (max-width:618px) {
-    .footer_row{
-        font-size:12px !important ;
+    .footer_row {
+        font-size: 12px !important;
     }
-    
-    .footer_main div header{
+
+    .footer_main div header {
         padding-right: 5px !important;
     }
-    
+
 }
