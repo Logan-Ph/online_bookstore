@@ -2107,7 +2107,7 @@ nav .wrapper {
 
     /* -----------------------------------CATEGORY PAGE----------------------------------- */
     .row_category_feature {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     /* -----------------------------------BOOK DETAILS PAGE----------------------------------- */
@@ -2144,6 +2144,130 @@ nav .wrapper {
 
 }
 
+
+@media  screen and (max-width:1420px) {
+    
+    .section_main_category {
+        flex-direction: column-reverse;
+    }
+
+    .category_section .best_seller {
+        width: 370px !important;
+        height: 560px !important;
+    }
+
+    .category_section .best_seller_img {
+        width: 370px !important;
+        height: 380px !important;
+        padding-bottom: 30px !important;
+        padding-top: 10px;
+    }
+
+    .category_section .best_seller_img img {
+        width: 220px !important;
+        height: 350px !important;
+        padding-bottom: 0px !important;
+        padding-top: 20px !important;
+    }
+
+    .footer_category {
+        margin-top: 3000px;
+    }
+
+    .category_section .star img {
+        width: 23px !important;
+        height: 23px !important;
+        padding-left: 10px !important;
+    }
+
+    .category_section .star {
+        margin-left: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .category_section .best_seller_content {
+        margin-top: 6px !important;
+        margin-left: -10px !important;
+    }
+
+    .category_section .best_seller_content p {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .category_section .best_seller_content p b {
+        padding-top: 10px !important;
+        font-size: 26px !important;
+    }
+
+    .category_section p.sans_serif.price.special_price {
+        margin-top: -10px !important;
+    }
+
+    .category_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_category {
+        margin-top: 11050px;
+    }
+
+    .row_category_book .main_category {
+        font-size: 40px;
+    }
+
+    .row_category_book .sub_category {
+        font-size: 30px;
+    }
+
+    .page_number {
+        padding-left: 600px;
+    }
+
+    .page_number li,
+    .page_number li p {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row_category_feature {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .row_category_feature li {
+        font-size: 20px !important;
+        margin-right: 50px !important;
+    }
+
+    .scroll_category {
+        left: 90%;
+    }
+
+    .category_section .product_action_feature {
+        left: 75px !important;
+        width: 220px !important;
+        height: 60px !important;
+    }
+
+    .header_category div {
+        font-size: 26px;
+    }
+
+    .page2 {
+        margin-top: 7310px;
+    }
+
+    .footer_category{
+        margin-top: 9700px;
+    }
+
+    .best_seller_content{
+        padding-left: 30px;
+    }
+
+}
 
 @media screen and (max-width: 1300px) {
     .best_seller_section {
@@ -2556,6 +2680,11 @@ nav .wrapper {
     .secure_img{
         padding-top: 30px !important;
         padding-right: 0px !important;
+    }
+
+    .page_navigation{
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
